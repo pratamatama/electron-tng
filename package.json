@@ -1,8 +1,8 @@
 {
-  "name": "electron-tng",
-  "productName": "electron-tng",
+  "name": "gabut-tng",
+  "productName": "GABUT TOGEL NUMBER GENERATOR",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Togel number generator for Pak Cip made with Electron",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -20,6 +20,18 @@
   "config": {
     "forge": {
       "packagerConfig": {},
+      "electronPackagerConfig": {
+        "icon": "./assets/icon.ico"
+      },
+      "electronWinstallerConfig": {
+        "name": "GABUT TOGEL NUMBER GENERATOR",
+        "setupExe": "gabut-tng.exe",
+        "description": "Gabut Togel Number Generator App",
+        "loadingGif": "./assets/android-chrome-512x512.png",
+        "iconUrl": "./assets/icon.ico",
+        "setupIcon": "./assets/icon.ico",
+        "noMsi": true
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
